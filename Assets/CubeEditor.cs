@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[ExecuteInEditMode]
+[ExecuteInEditMode] // Attribute
+[SelectionBase] // An attribute that makes it much harder to grab the top of the cube
 public class CubeEditor : MonoBehaviour
 {
 
@@ -19,6 +20,8 @@ public class CubeEditor : MonoBehaviour
         transform.position = new Vector3(snapPos.x, 0f, snapPos.z);
 
         textMesh = GetComponentInChildren<TextMesh>();
-        textMesh.text = snapPos.x + "," + snapPos.z;
+        string labelText = snapPos.x / 10f + "," + snapPos.z / 10f;
+        textMesh.text = labelText;
+        gameObject.name = labelText;
     }
 }
