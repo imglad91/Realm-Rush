@@ -6,6 +6,7 @@ using UnityEngine;
 [ExecuteInEditMode] // Attribute
 [SelectionBase] // An attribute that makes it much harder to grab the top of the cube
 [RequireComponent(typeof(Waypoint))]
+
 public class CubeEditor : MonoBehaviour
 {
 
