@@ -11,7 +11,7 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
 
-        StartCoroutine(FollowPath());
+        
         
     }
 
